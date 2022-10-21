@@ -1,0 +1,40 @@
+<section class=" text-center text-lg-start">
+  <div class="mb-3">
+    <div class="row g-0 d-flex align-items-center">
+      <div class="col-lg-4 d-none d-lg-flex">
+        <img src="https://stories.freepiklabs.com/storage/51531/mobile-login-bro-786.png" alt="Login Image"
+          class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
+      </div>
+      <div class="col-lg-8">
+        <div class="py-5 px-md-5">
+
+
+          <h1 class="text-success mb-3 text-center">Employee Login</h1>
+          <form [formGroup]="loginform">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example1">Email address:</label>
+              <input type="email" id="form2Example1" class="form-control" formControlName="email" [(ngModel)]="loginDetails.LoginEmail"/>
+              <span>{{emailErrors()}}</span>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example2">Password:</label>
+              <input type="password" id="form2Example2" class="form-control" formControlName="password" [(ngModel)]="loginDetails.LoginPassword" />
+              <span>{{passwordErrors()}}</span>
+            </div>
+
+            <!-- Submit button -->
+            <div class="text-center">
+              <button type="button" class="btn btn-primary btn-lg btn-block mb-4" (click)="submitNavigate()">Sign
+                in</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-bottom-nav></app-bottom-nav>
+</section>
