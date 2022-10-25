@@ -1,3 +1,5 @@
-.bg-image {
-    background-image: url(https://www.teahub.io/photos/full/356-3565238_autumn-desktop-wallpaper-pic-hwb421566-michigan-fall-colors.jpg);
+.customclass {
+    width: 80%;
+    margin: auto;
+    margin-right: 5% !important;
 }

@@ -21,7 +21,7 @@ export class LoginPageComponent implements OnInit {
   ngOnInit(): void {
     this.loginform = new FormGroup({
       email: new FormControl(null, [(Validators.required), (Validators.minLength(8)), Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')]),
-      password: new FormControl(null, [(Validators.required), (Validators.minLength(8)), Validators.pattern('^[a-z]{8,}$')])
+      password: new FormControl(null, [(Validators.required), (Validators.minLength(8)), Validators.pattern('^[0-9a-z]{8,}$')])
     })
   }
   emailErrors() {
